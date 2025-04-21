@@ -1,4 +1,4 @@
-from zona_fit_conexion.conexion import Conexion
+from conexion import Conexion
 from cliente import Cliente
 
 class ClienteDAO:
