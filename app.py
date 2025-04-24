@@ -33,12 +33,34 @@ def guardar():
         # llenamos el objeto cliente con los valores del formulario
         cliente_forma.populate_obj(cliente)
 
+        if not cliente.id:
         # Guardamos el nuevo cliente en la bd
-        ClienteDAO.insertar(cliente)
+            ClienteDAO.insertar(cliente)
+        else:
+            ClienteDAO.actualizar(cliente)
     # redirecionar a la pagina de inicio
 
     return redirect(url_for('index'))
 
+@app.route('/limpiar')
+def limpiar():
+    return redirect(url_for('index'))
+
+@app.route('/editar/<int:id>')
+def editar(id):
+    cliente = ClienteDAO.seleccionar_por_id(id)
+    cliente_forma = ClienteForma(obj=cliente)
+    clientes_db = ClienteDAO.seleccionar()
+    return render_template('index.html', titulo=titulo_app,
+                           clientes=clientes_db,
+                           forma=cliente_forma)
+
+@app.route('/eliminar/<int:id>')
+def eliminar(id):
+    cliente = Cliente(id=id)
+    ClienteDAO.eliminar(cliente)
+
+    return redirect(url_for('index'))
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5001, debug=True)
