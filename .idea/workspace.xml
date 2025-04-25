@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c649023-34ab-48f6-b0cd-467053db35da" name="Changes" comment="Metodo guardar">
+    <list default="true" id="7c649023-34ab-48f6-b0cd-467053db35da" name="Changes" comment="Metodo Editar, Limpiar Form y Eliminar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliente_dao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliente_forma.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliente_forma.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +140,7 @@
       <workItem from="1745359815394" duration="1998000" />
       <workItem from="1745438576359" duration="2503000" />
       <workItem from="1745472311377" duration="996000" />
-      <workItem from="1745523409923" duration="1452000" />
+      <workItem from="1745523409923" duration="1971000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -162,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745197483960</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Metodo Editar, Limpiar Form y Eliminar">
+      <option name="closed" value="true" />
+      <created>1745532692181</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745532692181</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +198,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Install mysql-connector-python" />
-    <option name="LAST_COMMIT_MESSAGE" value="Install mysql-connector-python" />
+    <MESSAGE value="Metodo Editar, Limpiar Form y Eliminar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Metodo Editar, Limpiar Form y Eliminar" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask$app.coverage" NAME="app Coverage Results" MODIFIED="1745523672547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
